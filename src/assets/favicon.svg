@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 285.74999 285.75001"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="1080px"
+     inkscape:zoom="0.238003"
+     inkscape:cx="1079.8183"
+     inkscape:cy="848.7288"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     height="1080px">
+    <sodipodi:guide
+       position="285.75426,-0.35497255"
+       orientation="1,0"
+       id="guide824" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2884"
+       style="fill:#7c3aed;fill-opacity:1"
+       transform="matrix(1.8852304,0,0,1.8852304,-129.40075,-32.909146)">
+      <path
+         id="rect1424"
+         style="fill:#7c3aed;fill-opacity:1;stroke:none;stroke-width:2.44535;stroke-linecap:round"
+         d="M 259.42383,65.976562 V 638.86133 H 832.30664 V 352.41992 h -143.2207 v 143.2207 H 402.64453 v -286.4414 h 143.2207 V 65.976562 Z"
+         transform="scale(0.26458333)" />
+      <rect
+         style="fill:#7c3aed;fill-opacity:1;stroke:none;stroke-width:0.324484;stroke-linecap:round"
+         id="rect1068"
+         width="37.89389"
+         height="37.89389"
+         x="182.32082"
+         y="17.456736"
+         ry="18.946945" />
+    </g>
+  </g>
+</svg>
