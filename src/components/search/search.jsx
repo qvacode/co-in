@@ -10,7 +10,6 @@ import ChartView from '../chart';
 import useCohere from '../../hooks/useCohere';
 import ChartSentimentView from '../chart-market-sentiment';
 import SectionLoader from '../section-loader';
-import CoinSearchCard from './coin-search-card';
 import TableInfo from '../table-only-info';
 import Footer from '../home/footer';
 
@@ -74,13 +73,25 @@ const Search = () => {
     setHistoricData(data.prices);
   };
 
-  // const apiKey2 = '61b771cd22af4892a81aa51eb8b60b42'
   const getNews = async () => {
-    const url = `https://newsapi.org/v2/everything?q=${coinData.name}&apiKey=a4487af12c6e4bf087aea40d3ed8a265&language=en&sortBy=publishedAt`;
-    const { data } = await axios.get(url);
-    const filterData = data.articles
-      .filter((_, index) => index < 50)
-      .map(el => el.content.toString());
+    const options = {
+      method: 'GET',
+      url: 'https://api.newscatcherapi.com/v2/search',
+      params: {
+        q: query,
+        lang: 'en',
+        sort_by: 'relevancy',
+        page: '1',
+        page_size: 50,
+      },
+      headers: {
+        'x-api-key': 'bD3r-sdXoDkaiF9TZB1EEpKjQ13XTwdurfvtPrmdK9E',
+      },
+    };
+
+    const { data } = await axios.request(options);
+
+    const filterData = data.articles.map(el => el.summary);
     setNews(filterData);
   };
 
