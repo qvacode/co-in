@@ -31,10 +31,10 @@ const Hero = () => {
   return (
     <>
       <motion.div
-        className="w-screen h-screen bg-[url('/img/bg.jpg')] bg-cover"
+        className="w-screen h-screen bg-[url('/img/bg.jpg')] bg-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.8 }}
         exit={{ opacity: 0 }}
       >
         <div className="absolute h-screen w-screen backdrop-blur-3xl top-0">
@@ -56,7 +56,7 @@ const Hero = () => {
               />
               <button
                 onClick={sendSearch}
-                className="text-white font-raleway inline-flex items-center gap-2 absolute mr-3 py-3 px-4 bg-violet-600 rounded-full hover:bg-pink-600 transition duration-500"
+                className="text-white font-raleway inline-flex items-center gap-2 absolute mr-3 py-3 px-4 bg-violet-600 rounded-full hover:bg-teal-700 transition duration-500"
               >
                 <FaSearch />
                 <p>Search</p>

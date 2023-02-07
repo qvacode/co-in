@@ -74,7 +74,7 @@ const Search = () => {
   };
 
   const getNews = async () => {
-    const options = {
+    /* const options = {
       method: 'GET',
       url: 'https://api.newscatcherapi.com/v2/search',
       params: {
@@ -87,11 +87,13 @@ const Search = () => {
       headers: {
         'x-api-key': 'bD3r-sdXoDkaiF9TZB1EEpKjQ13XTwdurfvtPrmdK9E',
       },
-    };
+    }; */
 
-    const { data } = await axios.request(options);
+    const url = `https://api.currentsapi.services/v1/search?keywords=${query}&language=en&apiKey=PriyziiEYWeXWZL6yey4g9Mrqknj0H2TP1S2IkBY82n9Jc69`;
 
-    const filterData = data.articles.map(el => el.summary);
+    const { data } = await axios.get(url);
+
+    const filterData = data.news.map(el => el.description);
     setNews(filterData);
   };
 
