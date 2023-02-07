@@ -14,5 +14,5 @@ Este proyecto se realizó como parte de la Hackathon MiduDev Cohere 2023. El obj
 
 ## 🔗 Puede acceder al proyecto desde aquí ⬇️
 
-[cripto-ai](https://crypto-ai.surge.sh/)
+[crypto-ai](https://crypto-ai.surge.sh/)
 
