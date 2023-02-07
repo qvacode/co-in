@@ -7,7 +7,7 @@ import { FaGithub, FaTwitter } from 'react-icons/fa';
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center justify-between sm:px-5 md:px-12 py-3 w-full bg-gradient-to-b from-slate-800 backdrop-blur-xl to-transparent absolute top-0 z-20">
+      <nav className="flex absolute items-center justify-between sm:px-5 md:px-12 py-5 w-full bg-gradient-to-b from-slate-800 backdrop-blur-xl to-transparent top-0 z-20">
         <Link to={'/'}>
           <img src={logo} alt="logo" className="w-[140px]" />
         </Link>

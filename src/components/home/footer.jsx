@@ -25,7 +25,7 @@ const Footer = () => {
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
               <Link
-                className="text-white transition duration-300 hover:text-violet-400"
+                className="text-white transition duration-300 hover:text-violet-400 font-bold text-xl"
                 to={'/'}
               >
                 Home
@@ -34,7 +34,7 @@ const Footer = () => {
 
             <li>
               <Link
-                className="text-white transition duration-300 hover:text-violet-400"
+                className="text-white transition duration-300 hover:text-violet-400 font-bold text-xl"
                 to={'/coin-list'}
               >
                 Coin List

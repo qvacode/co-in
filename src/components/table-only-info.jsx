@@ -19,6 +19,7 @@ const TableInfo = ({ data = [], setQuery, setMarketSentiment }) => {
             onClick={() => {
               setMarketSentiment(null);
               setQuery(coin.id);
+              window.scrollTo(0, 0);
               navigate(`/search?${coin.id}`);
             }}
             key={coin.id}

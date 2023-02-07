@@ -5,6 +5,18 @@ import { FaSearch } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Swal from 'sweetalert2';
 
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: toast => {
+    toast.addEventListener('mouseenter', Swal.stopTimer);
+    toast.addEventListener('mouseleave', Swal.resumeTimer);
+  },
+});
+
 const Hero = () => {
   const [search, setSearch] = useState('');
 
@@ -18,12 +30,9 @@ const Hero = () => {
     if (search.length > 3) {
       navigate(`/search?${search}`);
     } else {
-      Swal.fire({
-        position: 'top-end',
+      Toast.fire({
         icon: 'error',
         title: 'Your search must be at least 2 characters long.',
-        showConfirmButton: false,
-        timer: 1500,
       });
     }
   };

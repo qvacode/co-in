@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { motion } from 'framer-motion';
 
 import Navbar from '../navbar';
 import Loader from '../loader';
@@ -12,6 +13,18 @@ import ChartSentimentView from '../chart-market-sentiment';
 import SectionLoader from '../section-loader';
 import TableInfo from '../table-only-info';
 import Footer from '../home/footer';
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: toast => {
+    toast.addEventListener('mouseenter', Swal.stopTimer);
+    toast.addEventListener('mouseleave', Swal.resumeTimer);
+  },
+});
 
 const Search = () => {
   const navigate = useNavigate();
@@ -26,7 +39,11 @@ const Search = () => {
   const [trending, setTrending] = useState(null);
 
   useEffect(() => {
-    setQuery(search.substring(1));
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    setQuery(search.substring(1).trim().toLowerCase());
   }, []);
 
   useEffect(() => {
@@ -56,12 +73,9 @@ const Search = () => {
       const { image, market_data, symbol, name } = data;
       setCoinData({ image, market_data, symbol, name });
     } catch (error) {
-      Swal.fire({
-        position: 'top-end',
+      Toast.fire({
         icon: 'error',
         title: error.response.data.error.toUpperCase(),
-        showConfirmButton: false,
-        timer: 1500,
       });
       navigate('/coin-list');
     }
@@ -114,7 +128,13 @@ const Search = () => {
       {!coinData ? (
         <Loader />
       ) : (
-        <div className="flex flex-col bg-gradient-to-r from-slate-700 to-gray-900 text-white">
+        <motion.div
+          className="flex flex-col bg-gradient-to-r from-slate-700 to-gray-900 text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          exit={{ opacity: 0 }}
+        >
           <Navbar />
           <p className="text-white font-rajdhani text-3xl mt-16 text-center font-bold px-5">
             Use the charts (price and market sentiment) to make the best
@@ -159,7 +179,7 @@ const Search = () => {
           </div>
 
           <Footer />
-        </div>
+        </motion.div>
       )}
     </>
   );

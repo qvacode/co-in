@@ -11,7 +11,7 @@ const TrainigSection = () => {
             AI Training for Cryptocurrency Analysis
           </h2>
 
-          <p className="mt-4 text-gray-300 font-rajdhani text-xl">
+          <p className="mt-4 text-gray-300 font-rajdhani text-2xl text-start">
             In this section, we will delve into how we train our AI to analyze
             cryptocurrency news and market sentiment. Discover how technology is
             utilized to provide accurate and reliable information to our users.
@@ -22,9 +22,9 @@ const TrainigSection = () => {
           <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-500/10 hover:shadow-violet-500/10">
             <FcBullish className="text-3xl" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">Bullish</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">Bullish</h2>
 
-            <p className="mt-1 text-lg text-gray-300">
+            <p className="mt-1 text-xl text-gray-300">
               1. Trading volume has increased significantly in recent days.{' '}
               <br />
               2. Multiple key resistance breaks have occurred. <br />
@@ -35,9 +35,9 @@ const TrainigSection = () => {
           <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-500/10 hover:shadow-violet-500/10">
             <FcBearish className="text-3xl" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">Bearish</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">Bearish</h2>
 
-            <p className="mt-1 text-lg text-gray-300">
+            <p className="mt-1 text-xl text-gray-300">
               1. The trading volume has decreased compared to previous periods.{' '}
               <br />
               2. Behavior patterns have been identified that suggest a downward
@@ -49,9 +49,9 @@ const TrainigSection = () => {
           <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-500/10 hover:shadow-violet-500/10">
             <BiDollarCircle className="text-3xl text-violet-500" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">Marker Cap</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">Marker Cap</h2>
 
-            <p className="mt-1 text-lg text-gray-300">
+            <p className="mt-1 text-xl text-gray-300">
               1. Market capitalization has increased significantly in recent
               months. <br />
               2. Important mergers and acquisitions have taken place in the
@@ -64,9 +64,9 @@ const TrainigSection = () => {
           <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-500/10 hover:shadow-violet-500/10">
             <BiInfoCircle className="text-3xl text-violet-500" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">FOMO</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">FOMO</h2>
 
-            <p className="mt-1 text-lg text-gray-300">
+            <p className="mt-1 text-xl text-gray-300">
               1. There has been a significant increase in the number of positive
               mentions on social media. <br />
               2. There are a large number of institutional investors interested
@@ -79,9 +79,9 @@ const TrainigSection = () => {
           <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-500/10 hover:shadow-violet-500/10">
             <BsFillPeopleFill className="text-3xl text-violet-500" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">Community</h2>
+            <h2 className="mt-4 text-2xl font-bold text-white">Community</h2>
 
-            <p className="mt-1 text-lg text-gray-300">
+            <p className="mt-1 text-xl text-gray-300">
               1. Multiple announcements have been made by developers and experts
               in the currency. <br />
               2. The currency community has grown significantly in recent

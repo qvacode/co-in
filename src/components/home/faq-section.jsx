@@ -8,7 +8,7 @@ const FaqSection = () => {
       <div className="flex flex-col gap-2 sm:px-4 xl:w-[72%] mx-auto">
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               What is this website about?
             </h2>
 
@@ -28,14 +28,14 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             This website is a platform that provides information about
             cryptocurrencies and market sentiment related to them.
           </p>
         </details>
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               How does market sentiment analysis work?
             </h2>
 
@@ -55,14 +55,14 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             Market sentiment analysis is performed by consuming a news API and
             processing them with another sentiment analysis API called Cohere.
           </p>
         </details>
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               Is the information on this website accurate?
             </h2>
 
@@ -82,7 +82,7 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             We cannot guarantee the accuracy of the information on this site. It
             is recommended to conduct your own research and consult reliable
             sources before making decisions related to cryptocurrencies.
@@ -91,7 +91,7 @@ const FaqSection = () => {
 
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               How do we select news for market sentiment analysis?
             </h2>
 
@@ -111,14 +111,14 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             News is selected by consuming a news API and selecting the 30 most
             recent articles published about the cryptocurrency in question.
           </p>
         </details>
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               Why can't I see a particular cryptocurrency in the search section?
             </h2>
 
@@ -138,7 +138,7 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             Why can't I see a particular cryptocurrency in the search section?
             It is possible that the cryptocurrency in question is not available
             on the CoinGecko API or has not yet been included on our website.
@@ -146,7 +146,7 @@ const FaqSection = () => {
         </details>
         <details className="group border-l-4 border-violet-500 bg-gray-900 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h2 className="text-lg font-bold text-white">
+            <h2 className="text-xl font-bold text-white">
               Is market sentiment analysis a precise prediction of the
               cryptocurrency price?
             </h2>
@@ -167,7 +167,7 @@ const FaqSection = () => {
             </span>
           </summary>
 
-          <p className="mt-4 leading-relaxed text-gray-50 text-lg">
+          <p className="mt-4 leading-relaxed text-gray-50 text-xl">
             No. Market sentiment analysis is not a precise prediction of the
             cryptocurrency price and should not be used as such.
           </p>

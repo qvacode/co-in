@@ -6,14 +6,14 @@ const Paginate = ({ previosPage, nextPage }) => {
       <div className="flex justify-between items-center w-full text-white font-rajdhani font-semibold">
         <button
           onClick={previosPage}
-          className=" text-white text-xl flex items-center"
+          className=" text-white transition duration-300 hover:text-violet-400 text-xl flex items-center"
         >
           <BiChevronLeft className="text-3xl" />
           Anterior
         </button>
         <button
           onClick={nextPage}
-          className=" text-white text-xl flex items-center"
+          className=" text-white transition duration-300 hover:text-violet-400 text-xl flex items-center"
         >
           Siguiente
           <BiChevronRight className="text-3xl" />
