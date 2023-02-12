@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1080"
+   width="680"
    height="194.57201"
-   viewBox="0 0 285.74999 51.48051"
+   viewBox="0 0 179.91667 51.48051"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -24,9 +24,9 @@
      inkscape:document-units="px"
      showgrid="false"
      units="px"
-     width="1080px"
+     width="800px"
      inkscape:zoom="1.0525607"
-     inkscape:cx="510.18438"
+     inkscape:cx="418.97821"
      inkscape:cy="131.10883"
      inkscape:window-width="1920"
      inkscape:window-height="1052"
@@ -44,12 +44,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g8365"
-       transform="translate(0.36724139)">
+       id="g837"
+       transform="translate(-0.12102918)">
       <g
          id="g2884"
          style="fill:#7c3aed;fill-opacity:1"
-         transform="matrix(0.33963547,0,0,0.33963547,-22.972473,-5.9287758)">
+         transform="matrix(0.33963547,0,0,0.33963547,-22.515187,-5.9287753)">
         <path
            id="rect1424"
            style="fill:#7c3aed;fill-opacity:1;stroke:none;stroke-width:2.44535;stroke-linecap:round"
@@ -66,15 +66,15 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.0178px;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:center;text-anchor:middle;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1.14671;stroke-linecap:round"
-         x="171.92876"
-         y="41.428959"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.861px;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:center;text-anchor:middle;fill:#e3d7f4;fill-opacity:1;stroke:none;stroke-width:1.34649;stroke-linecap:round"
+         x="119.73445"
+         y="45.853867"
          id="text6424"><tspan
            sodipodi:role="line"
            id="tspan6422"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.0178px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#e3d7f4;stroke-width:1.14672"
-           x="171.92876"
-           y="41.428959">CRYPTO:AI</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.861px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#e3d7f4;stroke-width:1.34651"
+           x="119.73445"
+           y="45.853867">co:in</tspan></text>
     </g>
   </g>
 </svg>

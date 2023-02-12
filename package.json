@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.24.4",
+    "@tanstack/react-query-devtools": "^4.24.4",
     "axios": "^1.2.6",
     "chart.js": "^4.2.0",
     "cohere-ai": "^5.0.2",

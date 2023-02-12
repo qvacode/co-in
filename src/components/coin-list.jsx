@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 
 import Navbar from './navbar';
 import Loader from './loader';
-import useAxios from '../hooks/useAxios';
 import { motion } from 'framer-motion';
 
 import CoinTable from './coin-table';
 import Paginate from './paginate';
 import Footer from './home/footer';
+import useAllCoins from '../hooks/useAllCoins';
 
 const CoinList = () => {
   const [page, setPage] = useState(0);
@@ -16,11 +16,9 @@ const CoinList = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const url =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false';
+  const { coins } = useAllCoins();
 
-  const coins = useAxios(url);
-  const filterCoins = !coins ? null : coins.slice(page, page + 20);
+  const filterCoins = !coins.data ? null : coins.data.slice(page, page + 20);
 
   const nextPage = () => {
     if (page < 179) setPage(page + 20);
@@ -32,7 +30,7 @@ const CoinList = () => {
 
   return (
     <>
-      {!coins ? (
+      {!coins.data ? (
         <Loader />
       ) : (
         <motion.div
@@ -44,7 +42,7 @@ const CoinList = () => {
         >
           <Navbar />
 
-          <div className="flex flex-col gap-2 w-screen justify-center mt-16 sm:w-full md:w-10/12 lg:w-7/12 xl:w-1/2">
+          <div className="flex flex-col gap-2 w-screen justify-center mt-20 sm:w-full md:w-10/12 lg:w-7/12 xl:w-2/3">
             <p className="text-center font-rajdhani font-bold text-4xl w-10/12 mx-auto text-white">
               Find the cryptocurrency you are looking for.
             </p>

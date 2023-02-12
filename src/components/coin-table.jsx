@@ -17,7 +17,7 @@ const CoinTable = ({ data = [] }) => {
         {data.map(coin => (
           <tr
             key={coin.id}
-            onClick={() => navigate(`/search?${coin.id}`)}
+            onClick={() => navigate(`/search/${coin.id}`)}
             className="text-center hover:bg-slate-700 hover:cursor-pointer"
           >
             <td className="w-1/4 py-2">

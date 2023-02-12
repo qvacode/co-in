@@ -13,7 +13,7 @@ const Footer = () => {
           <img
             src={logo}
             alt=""
-            className="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
+            className="w-[120px]"
           />
         </Link>
 

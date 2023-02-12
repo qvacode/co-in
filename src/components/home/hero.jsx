@@ -3,19 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 
 import { motion } from 'framer-motion';
-import Swal from 'sweetalert2';
-
-const Toast = Swal.mixin({
-  toast: true,
-  position: 'top-end',
-  showConfirmButton: false,
-  timer: 2000,
-  timerProgressBar: true,
-  didOpen: toast => {
-    toast.addEventListener('mouseenter', Swal.stopTimer);
-    toast.addEventListener('mouseleave', Swal.resumeTimer);
-  },
-});
+import { Toast } from '../../helpers/toast';
 
 const Hero = () => {
   const [search, setSearch] = useState('');
@@ -28,7 +16,7 @@ const Hero = () => {
 
   const sendSearch = () => {
     if (search.length > 3) {
-      navigate(`/search?${search}`);
+      navigate(`/search/${search.toLowerCase().trim()}`);
     } else {
       Toast.fire({
         icon: 'error',
